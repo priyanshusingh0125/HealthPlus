@@ -1,0 +1,632 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="HealthPlus.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    
+
+    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="author" content="Jthemes"/>	
+		<meta name="description" content="MedService - Medical & Medical Health Landing Page Template"/>
+		<meta name="keywords" content="Responsive, HTML5 Template, Jthemes, One Page, Landing, Medical, Health, Healthcare, Doctor, Clinic, Care, Hospital">	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+				
+  		<!-- SITE TITLE -->
+		<title>MedService - Medical & Medical Health Landing Page Template</title>
+							
+		<!-- FAVICON AND TOUCH ICONS  -->
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+		<!-- GOOGLE FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet"> 	
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet"> 
+
+		<!-- BOOTSTRAP CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+				
+		<!-- FONT ICONS -->
+		<link href="../../../../use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" rel="stylesheet" crossorigin="anonymous">		
+		<link href="css/flaticon.css" rel="stylesheet">
+
+		<!-- PLUGINS STYLESHEET -->
+		<link href="css/menu.css" rel="stylesheet">	
+		<link id="effect" href="css/dropdown-effects/fade-down.css" media="all" rel="stylesheet">
+		<link href="css/magnific-popup.css" rel="stylesheet">	
+		<link href="css/owl.carousel.min.css" rel="stylesheet">
+		<link href="css/owl.theme.default.min.css" rel="stylesheet">
+		<link href="css/animate.css" rel="stylesheet">
+		<link href="css/jquery.datetimepicker.min.css" rel="stylesheet">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<!-- TEMPLATE CSS -->
+		<link href="css/style.css" rel="stylesheet">
+		 <script src="bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+		<script src="bootstrap/js/popper.min.js"></script>
+		 <script src="bootstrap/js/bootstrap.min.js"></script>
+		  <link href="fontawesome/css/all.css" rel="stylesheet" />
+		<!-- RESPONSIVE CSS -->
+		<link href="css/responsive.css" rel="stylesheet"> 
+
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <script src="datatables/js/jquery.dataTables.min.js"></script>
+
+	
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="loader-wrapper">
+			<div id="loader"><div class="loader-inner"></div></div>
+		</div>
+    <form id="form1" runat="server">
+
+        <!-- STYLE SWITCHER
+		============================================= -->
+	<%--	<div id="stlChanger">
+			<div class="blockChanger bgChanger">
+            	<a href="#" class="chBut"><i class="fas fa-sliders-h"></i></a>
+                <div class="chBody">														
+					<div class="stBlock text-center" style="margin:30px 20px 30px 16px">
+						<p>Choose Layout</p>
+						<a class="s_1" href="demo-1.html"><img src="images/color-scheme/l-01.jpg" width="175" height="120" alt="layout-image"></a>
+						<a class="s_1" href="demo-2.html"><img src="images/color-scheme/l-02.jpg" width="175" height="93" alt="layout-image"></a>
+						<a class="s_1" href="demo-3.html"><img src="images/color-scheme/l-03.jpg" width="175" height="105" alt="layout-image"></a>
+						<a class="s_1" href="demo-4.html"><img src="images/color-scheme/l-04.jpg" width="175" height="100" alt="layout-image"></a>
+						<a class="s_1" href="demo-5.html"><img src="images/color-scheme/l-05.jpg" width="175" height="112" alt="layout-image"></a>
+						<a class="s_1" href="demo-6.html"><img src="images/color-scheme/l-06.jpg" width="175" height="100" alt="layout-image"></a>
+						<a class="s_1" href="demo-7.html"><img src="images/color-scheme/l-07.jpg" width="175" height="97" alt="layout-image"></a>
+						<a class="s_1" href="demo-8.html"><img src="images/color-scheme/l-08.jpg" width="175" height="91" alt="layout-image"></a>
+						<a class="s_1" href="demo-9.html"><img src="images/color-scheme/l-09.jpg" width="175" height="97" alt="layout-image"></a>
+						<a class="s_1" href="demo-10.html"><img src="images/color-scheme/l-10.jpg" width="175" height="105" alt="layout-image"></a>
+						<a class="s_1" href="demo-11.html"><img src="images/color-scheme/l-11.jpg" width="175" height="105" alt="layout-image"></a>
+						<a class="s_1" href="demo-12.html"><img src="images/color-scheme/l-12.jpg" width="175" height="125" alt="layout-image"></a>
+					</div>						
+				</div>
+			</div>
+		</div>--%>	  <!-- END SWITCHER -->
+
+		<div id="page" class="page">
+            <header id="header" class="header">
+
+
+				<!-- MOBILE HEADER -->
+			    <div class="wsmobileheader clearfix">
+			    	<a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
+			    	<span class="smllogo"><img src="imgs/Health Plus small.png" width="180" height="40" alt="mobile-logo"/></span>
+			    	<a href="#" class="callusbtn"><i class="fas fa-phone"></i></a>
+			 	</div>
+
+
+			 	<!-- HEADER STRIP -->
+			 	<div class="headtoppart bg-blue clearfix">
+			    	<div class="headerwp clearfix">
+
+			    		<!-- Address
+			     		<div class="headertopleft">			     			
+			        		<div class="address clearfix"><span><i class="fas fa-map-marker-alt"></i>121 King St,
+			            		Melbourne, VIC 3000 </span> <a href="tel:123456789" class="callusbtn"><i class="fas fa-phone"></i>(800)-569-7890</a>
+			            	</div>
+			     		</div>-->
+
+			     		 <!--Social Links 
+					    <div class="headertopright">
+					    	<a class="googleicon" title="Google" href="#"><i class="fab fa-google"></i> <span class="mobiletext02">Google</span></a>
+					        <a class="linkedinicon" title="Linkedin" href="#"><i class="fab fa-linkedin-in"></i> <span class="mobiletext02">Linkedin</span></a>
+					        <a class="twittericon" title="Twitter" href="#"><i class="fab fa-twitter"></i> <span class="mobiletext02">Twitter</span></a>
+					        <a class="facebookicon" title="Facebook" href="#"><i class="fab fa-facebook-f"></i> <span class="mobiletext02">Facebook</span></a>
+				      	</div>-->
+
+				    </div>
+			  	</div>	<!-- END HEADER STRIP -->
+
+
+			  	<!-- NAVIGATION MENU -->
+			  	<div class="wsmainfull menu clearfix">
+    				<div class="wsmainwp clearfix">
+
+    					<!-- LOGO IMAGE -->
+    					<!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 360 x 80 pixels) -->
+    					<div class="desktoplogo"><a href="#hero-2"><img src="imgs/Health Plus small.png"  width="50" height="40" alt="header-logo"></a></div>
+
+    					<!-- MAIN MENU -->
+      					<nav class="wsmenu clearfix">
+        					<ul class="wsmenu-list">
+
+
+								<li class="nl-simple" aria-haspopup="true"><a href="default.aspx">Home</a></li>	
+
+        						<!-- DROPDOWN MENU 
+					        	<li aria-haspopup="true"><a href="#">Home <span class="wsarrow"></span></a>
+					           		<ul class="sub-menu">
+					              		<li aria-haspopup="true"><a href="demo-1.html">Home Concept #1</a></li>
+					              		<li aria-haspopup="true"><a href="demo-3.html">Home Concept #3</a></li>
+					              		<li aria-haspopup="true"><a href="demo-4.html">Home Concept #4</a></li>
+					              		<li aria-haspopup="true"><a href="demo-5.html">Home Concept #5</a></li>
+					              		<li aria-haspopup="true"><a href="demo-6.html">Home Concept #6</a></li>
+					              		<li aria-haspopup="true"><a href="demo-7.html">Home Concept #7</a></li>
+					              		<li aria-haspopup="true"><a href="demo-8.html">Home Concept #8</a></li>
+					              		<li aria-haspopup="true"><a href="demo-9.html">Home Concept #9</a></li>
+					              		<li aria-haspopup="true"><a href="demo-10.html">Home Concept #10</a></li>
+					              		<li aria-haspopup="true"><a href="demo-11.html">Home Concept #11</a></li>
+					              		<li aria-haspopup="true"><a href="demo-12.html">Home Concept #12</a></li>
+					           		</ul>
+					          	</li>	 END DROPDOWN MENU -->
+
+
+					          	<!-- PAGES 
+					          	<li aria-haspopup="true"><a href="#">Pages <span class="wsarrow"></span></a>
+            						<div class="wsmegamenu clearfix">
+             							<div class="container">
+               								<div class="row">
+
+               									<!-- MEGAMENU LINKS --
+               									<ul class="col-lg-3 col-md-12 col-xs-12 link-list">
+								                    <li class="title">Standard Pages:</li>
+								                    <li><a href="about-us.html">About Us Page</a></li>
+								                    <li><a href="who-we-are.html">Who We Are</a></li>
+								                    <li><a href="all-services.html">Our Services</a></li>
+								                    <li><a href="service-1.html">Service Single #1</a></li>
+								                    <li><a href="service-2.html">Service Single #2</a></li>				                             
+								                </ul>
+
+								                <!-- MEGAMENU LINKS --
+               									<ul class="col-lg-3 col-md-12 col-xs-12 link-list">
+								                    <li class="title">Medical Pages:</li>
+								                    <li><a href="all-departments.html">Our Departments</a></li>								                    
+								                    <li><a href="department-single.html">Department Single</a></li>
+								                    <li><a href="all-doctors.html">Meet the Doctors</a></li>
+								                    <li><a href="doctor-1.html">Doctor's Profile #1</a></li>
+								                    <li><a href="doctor-2.html">Doctor's Profile #2</a></li>
+								                    <li><a href="timetable.html">Doctors Timetable</a></li>									                    
+								                </ul>
+
+								                <!-- MEGAMENU LINKS --
+               									<ul class="col-lg-3 col-md-12 col-xs-12 link-list">
+								                    <li class="title">Special Pages:</li>
+								                    <li><a href="pricing-1.html">Pricing Packages #1</a></li>
+								                    <li><a href="pricing-2.html">Pricing Packages #2</a></li>								                    
+								                    <li><a href="appointment.html">Make an Appointment</a></li>
+								                    <li><a href="faqs.html">FAQs Page</a></li>
+								                    <li><a href="terms.html">Terms of Use</a></li> 
+								                </ul>
+
+								                <!-- MEGAMENU LINKS --
+               									<ul class="col-lg-3 col-md-12 col-xs-12 link-list">
+								                    <li class="title">Auxiliary Pages:</li>
+								                    <li><a href="gallery.html">Our Gallery</a></li>
+								                    <li><a href="blog-listing.html">Blog Listing Page</a></li>
+								                    <li><a href="single-post.html">Single Blog Post</a></li>								                   
+								                    <li><a href="contacts-1.html">Contact Us #1</a></li>
+								                    <li><a href="contacts-2.html">Contact Us #2</a></li> 						
+								                </ul>
+								                
+							                </div>  <!-- End row --
+							            </div>  <!-- End container --
+							        </div>  <!-- End wsmegamenu -
+							    </li>	<!-- END PAGES -->
+
+
+					          	<!-- HALF MENU -
+					          	<li aria-haspopup="true"><a href="#">Portals <span class="wsarrow"></span></a>
+					            	<div class="wsmegamenu clearfix halfmenu">
+					              		<div class="container-fluid">
+					                		<div class="row">
+
+					                			<!-- Links -
+							                	<ul class="col-lg-6 col-md-12 col-xs-12 link-list">
+							                    	<li class="title">For Patients:</li>
+								                    <li><a href="#">Meet The Doctors</a></li>							                    
+								                    <li><a href="#">Patient Info Sheets</a></li>
+								                    <li><a href="#">Online Patients Portal</a></li>
+								                    <li><a href="#">Patients Testimonials</a></li>
+								                    <li><a href="#">Blog & Latest News</a></li>								                    
+							                  	</ul>
+
+							                  	<!-- Links -
+								                <ul class="col-lg-6 col-md-12 col-xs-12 link-list">
+								                    <li class="title">Quick Links:</li>
+								                    <li><a href="#">Terms & Privacy Policy</a></li>
+								                    <li><a href="#">Donor Privacy Policy</a></li>
+								                    <li><a href="#">Workers Compensation</a></li>
+								                    <li><a href="#">Insurance Information</a></li>
+								                    <li><a href="#">After Hours Care</a></li>
+								                </ul>
+
+					                		</div>
+					              		</div>
+					            	</div>
+					          	</li>	 END HALF MENU -->
+
+
+					          	<!-- MEGAMENU -->
+					          	<li aria-haspopup="true"><a href="#">Portals <span class="wsarrow"></span></a>
+            						<div class="wsmegamenu clearfix">
+             							<div class="container">
+               								<div class="row">
+
+
+               									<!-- MEGAMENU QUICK LINKS -->
+               									<ul class="col-lg-3 col-md-12 col-xs-12 link-list">
+								                    <li class="title">Quick Links:</li>
+								                    <li><a href="userprofile.aspx">Universal Patient Record</a></li>
+								                    <li><a href="healthscheme.aspx">Health Schemes</a></li>
+								                    <li><a href="medicalfacility.aspx">Search Hospitals</a></li>								                    
+								                    
+								                    <li><a href="medicalfacility.aspx">Appointments</a></li>
+								                    <li><a href="#">Buy Medicine</a></li>
+								                    <li><a href="userprofile.aspx">User Profile</a></li>
+													<li><a href="hospitaldataupdate.aspx">hospital data sync</a></li>
+								                </ul>
+
+
+								                <!-- MEGAMENU FEATURED NEWS -->
+								                <div class="col-lg-5 col-md-12 col-xs-12">
+
+								                	<!-- Title -->
+								                    <h3 class="title">Featured News:</h3>
+
+								                    <!-- Image -->
+								                    <div class="fluid-width-video-wrapper"><img src="images/blog/featured-news.jpg" alt="featured-news" /></div>
+
+								                    <!-- Text -->
+								                    <h5 class="h5-xs"><a href="#">5 Benefits of integrative medicine</a></h5>
+								                    <p class="wsmwnutxt">Porta semper lacus cursus, feugiat primis ultrice in ligula risus auctor
+								                       tempus feugiat dolor impedit magna purus at pretium gravida donec
+								                    </p>
+
+								                </div>	<!-- END MEGAMENU FEATURED NEWS -->
+
+
+								                <!-- MEGAMENU LATEST NEWS -->
+								                <div class="col-lg-4 col-md-12 col-xs-12">
+
+								                	<!-- Title -->
+                    								<h3 class="title">Latest News:</h3>
+
+                    								<!-- Latest News -->
+                    								<ul class="latest-news">
+									
+														<!-- Post #1 -->
+														<li class="clearfix d-flex align-items-center">
+
+															<!-- Image -->
+															<img class="img-fluid" src="images/blog/latest-post-1.jpg" alt="blog-post-preview" />
+
+															<!-- Text -->
+															<div class="post-summary">
+																<a href="single-post.html">Etiam sapien risus ante auctor tempus accumsan an empor ...</a>
+																<p>43 Comments</p>
+															</div>
+
+														</li>
+														
+														<!-- Post #2 -->
+														<li class="clearfix d-flex align-items-center">
+
+															<!-- Image -->
+															<img class="img-fluid" src="images/blog/latest-post-2.jpg" alt="blog-post-preview" />
+
+															<!-- Text -->
+															<div class="post-summary">
+																<a href="single-post.html">Blandit tempor a sapien ipsum, porta risus auctor justo ...</a>
+																<p>38 Comments</p>
+															</div>
+
+														</li>
+														
+														<!-- Post #3 -->
+														<li class="clearfix d-flex align-items-center">
+
+															<!-- Image -->
+															<img class="img-fluid" src="images/blog/latest-post-3.jpg" alt="blog-post-preview" />
+
+															<!-- Text -->
+															<div class="post-summary">
+																<a href="single-post.html">Cursus risus auctor tempus risus laoreet turpis auctor varius ...</a>
+																<p>29 Comments</p>
+															</div>
+
+														</li>
+													</ul>
+                    							</div>	<!-- END MEGAMENU LATEST NEWS -->
+
+								                
+							                </div>  <!-- End row -->	
+							            </div>  <!-- End container -->	
+							        </div>  <!-- End wsmegamenu -->	
+							    </li>	<!-- END MEGAMENU -->
+
+							    
+							    <!-- SIMPLE NAVIGATION LINK 
+							    <li class="nl-simple" aria-haspopup="true"><a href="#">Simple Link</a></li>-->
+
+							    <!-- NAVIGATION MENU BUTTON -->
+							    <li class="nl-simple header-btn" aria-haspopup="true"><a href="userlogin.aspx">Login</a></li>
+
+
+        					</ul>
+        				</nav>	<!-- END MAIN MENU -->
+
+    				</div>
+    			</div>	<!-- END NAVIGATION MENU -->
+
+
+			</header>	<!-- END HEADER -->
+
+			
+
+
+
+       <%-- <div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="imgs/Health Plus small.png" width="30" height="30" />
+                    Health Plus
+                </a>
+ 
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="homepage.aspx">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Terms</a>
+                        </li>
+ 
+                    </ul>
+ 
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButton5" runat="server" OnClick="LinkButton5_Click">| Hospitals |</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButton4" runat="server">| Health Schemes |</asp:LinkButton>
+                        </li>
+                        
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButton1" runat="server">| User Login |</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButton2" runat="server">| Sign Up |</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButton3" runat="server">| Logout |</asp:LinkButton>
+                        </li>
+ 
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButton7" runat="server">| Hello user |</asp:LinkButton>
+ 
+                        </li>
+                    </ul>
+                </div>
+                     
+
+                    
+
+                
+
+
+            </nav>
+        </div> --%>
+
+
+
+
+
+
+
+
+       <%-- <div>--%>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+      <%--  </div>--%>
+
+     <%--   <footer>
+            <div id="footer1" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p>
+                            <asp:LinkButton class="footerlinks" ID="LinkButton6" runat="server">Hospital Login</asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton class="footerlinks" ID="LinkButton11" runat="server">Management</asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton class="footerlinks" ID="LinkButton12" runat="server">Publisher Management</asp:LinkButton>
+                            &nbsp;
+                            
+                        </p>
+ 
+                    </div>
+ 
+                </div>
+            </div>
+            <div id="footer2" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                         <p style="color:whitesmoke">&copy All right Reversed. <a class="footerlinks" href="#" target="_blank">Health Plus</a></p>
+                    </div>
+                    </div> 
+                </div> 
+           
+
+        </footer>--%>
+
+			<footer id="footer-3" class="wide-40 footer division">
+				<div class="container">
+
+
+					<!-- FOOTER CONTENT -->
+					<div class="row">	
+
+
+						<!-- FOOTER INFO -->
+						<div class="col-md-6 col-lg-4">
+							<div class="footer-info mb-40">
+
+								<!-- Footer Logo -->
+								<!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 360 x 80  pixels) -->
+								<img src="imgs/Health Plus.jpg" width="180" height="40" alt="footer-logo">
+
+								<!-- Text -->	
+								<p class="p-sm mt-20">Always There to Help you in life at yo most difficult days
+								</p>
+
+								<!-- Social Icons 
+								<div class="footer-socials-links mt-20">
+									<ul class="foo-socials text-center clearfix">
+
+										<li><a href="#" class="ico-facebook"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a href="#" class="ico-twitter"><i class="fab fa-twitter"></i></a></li>	
+										<li><a href="#" class="ico-google-plus"><i class="fab fa-google-plus-g"></i></a></li>
+										<li><a href="#" class="ico-tumblr"><i class="fab fa-tumblr"></i></a></li>			
+																																				
+										<!--
+										<li><a href="#" class="ico-behance"><i class="fab fa-behance"></i></a></li>	
+										<li><a href="#" class="ico-dribbble"><i class="fab fa-dribbble"></i></a></li>											
+										<li><a href="#" class="ico-instagram"><i class="fab fa-instagram"></i></a></li>	
+										<li><a href="#" class="ico-linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+										<li><a href="#" class="ico-pinterest"><i class="fab fa-pinterest-p"></i></a></li>									
+										<li><a href="#" class="ico-youtube"><i class="fab fa-youtube"></i></a></li>											
+										<li><a href="#" class="ico-vk"><i class="fab fa-vk"></i></a></li>
+										<li><a href="#" class="ico-yelp"><i class="fab fa-yelp"></i></a></li>
+										<li><a href="#" class="ico-yahoo"><i class="fab fa-yahoo"></i></a></li>
+									    -
+
+									</ul>-->									
+								</div> 
+								
+							</div>	
+						
+
+
+						<!-- FOOTER CONTACTS 
+						<div class="col-md-6 col-lg-3 offset-lg-1">
+							<div class="footer-box mb-40">
+							
+								<!-- Title -
+								<h5 class="h5-xs">Our Location</h5>
+
+								<!-- Address -
+								<p>121 King Street, Melbourne,</p> 
+								<p>Victoria 3000 Australia</p>
+								
+								<!-- Email -->
+								<!--<p class="foo-email mt-20">E: <a href="#">hello@yourdomain.com</a></p>--.
+
+								<!-- Phone -->
+								<!--<p>P: +12 9 8765 4321</p>
+
+							</div>
+						</div>-->
+
+
+						<!-- FOOTER LINKS -->
+						<div class="col-md-6 col-lg-2">
+							<div class="footer-links mb-40">
+							
+								<!-- Title -->
+								<h5 class="h5-xs">About Clinic</h5>
+
+								<!-- Footer Links -->
+								<ul class="foo-links clearfix">
+									<li><a href="hospitallogin.aspx">Hospital Login</a></li>
+									<li><a href="pharmaloginaspx">Pharmacy Login</a></li>
+									<li><a href="ambulance.aspx">Ambulance Assistance</a></li>
+									<li><a href="adminlogin.aspx">Admin Login</a></li>
+									<li><a href="membermanagement.aspx">User Management</a></li>									
+								</ul>
+
+							</div>
+						</div>
+
+
+						<!-- FOOTER LINKS -->
+						<div class="col-md-6 col-lg-2">
+							<div class="footer-links mb-40">
+												
+								<!-- Title 
+								<h5 class="h5-xs">Discover</h5>-->
+
+								<!-- Footer List -->
+								<ul class="clearfix">																		
+									<li><a href="#">Help Center</a></li>																				
+									
+									<li><a href="#">Terms & Privacy</a></li>
+									<li><a href="#">FAQs</a></li>
+																	
+								</ul>
+
+							</div>
+						</div>	
+
+
+					</div>	  <!-- END FOOTER CONTENT -->
+
+
+					<!-- FOOTER COPYRIGHT -->
+					<div class="bottom-footer">
+						<div class="row">
+							<div class="col-md-12">
+								<p class="footer-copyright">&copy; 2020 <span>Health Plus</span>. All Rights Reserved</p>
+							</div>
+						</div>
+					</div>
+
+
+				</div>	   <!-- End container -->
+			</footer>	<!-- END FOOTER-3 -->
+
+
+</div>
+		
+    </form>
+
+		<!-- EXTERNAL SCRIPTS
+		============================================= -->	
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>	
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/jquery.easing.js"></script>
+		<script src="js/jquery.appear.js"></script>
+		<script src="js/jquery.stellar.min.js"></script>	
+		<script src="js/menu.js"></script>
+		<script src="js/sticky.js"></script>
+		<script src="js/jquery.scrollto.js"></script>
+		<script src="js/materialize.js"></script>	
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>	
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/isotope.pkgd.min.js"></script>
+		<script src="js/hero-form.js"></script>
+		<script src="js/contact-form.js"></script>
+		<script src="js/comment-form.js"></script>
+		<script src="js/appointment-form.js"></script>
+		<script src="js/jquery.datetimepicker.full.js"></script>		
+		<script src="js/jquery.validate.min.js"></script>	
+		<script src="js/jquery.ajaxchimp.min.js"></script>
+		<script src="js/wow.js"></script>	
+	
+		<!-- Custom Script -->		
+		<script src="js/custom.js"></script>
+
+	<script> 
+			new WOW().init();
+    </script>
+		<script src="js/changer.js"></script>
+		<script defer src="js/styleswitch.js"></script>	
+</body>
+</html>
